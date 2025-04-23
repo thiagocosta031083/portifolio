@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Costa - Portifólio - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h3>Olá, eu sou</h3>
+            <h1>Thiago de Almeida Costa</h1>
+            <img src="images/banner_toposite.png" height="250px">
+            <button onclick="baixarPDF()" class="cta">Download do Curriculo</button>
+
+            <script>
+                function baixarPDF() {
+                    const link = document.createElement('a');
+                    window.open("images/Currículo_Thiago_Costa.pdf", "_blank");
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script>
+
+        </div>
+    </header>
+
+    <!-- Sobre  -->
+    <section class="sobre">
+        <div class="container">
+            <h2>Um pouco sobre mim</h2>
+            <div class="picture">
+                <img src="images/FOTO PERFIL.jpg" height="350px" alt="Foto de Perfil">
+                <div class="sobre-mim">
+                    <p>
+                        Sou Thiago de Almeida Costa, desenvolvedor back-end apaixonado por tecnologia, fiz uma
+                        transição de carreira após mais de 20 anos de sólida experiência na área contábil. Minha jornada
+                        na tecnologia começou em 2013, quando, atuando como contador em uma organização sem fins
+                        lucrativos, fui responsável por acompanhar e validar melhorias em um sistema contábil. Esse
+                        primeiro contato com desenvolvimento despertou em mim o interesse por linguagens de programação,
+                        plantando a semente da minha futura mudança profissional.
+                    </p><br>
+                    <p>
+                        Nos últimos anos, mergulhei de vez no universo da programação. Concluí dois cursos em
+                        desenvolvimento web e Java, e atualmente estou cursando uma especialização em Tecnologia Java
+                        com previsão de conclusão em dezembro de 2026.
+                    </p><br>
+                    <p>
+                        Meu objetivo é me tornar um desenvolvedor full-stack, unindo minha bagagem analítica da
+                        contabilidade com o raciocínio lógico e técnico da programação para construir soluções
+                        inteligentes e eficientes. Tenho projetos práticos publicados no meu GitHub que demonstram minha
+                        evolução como desenvolvedor e o comprometimento com essa nova fase da minha carreira.
+                    </p><br>
+
+                </div>
+            </div>
+            <div class="icones-contato">
+
+                <a href="mailto:thiagocosta031083@gmail.com" aria-label="E-mail">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" width="40" height="40">
+                </a>
+                <a href="https://www.linkedin.com/in/thiago-de-almeida-costa/" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/thiagocosta031083" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" />
+                </a>
+                <a href="https://wa.me/5561996581656" target="_blank" aria-label="Fale conosco no WhatsApp">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50"
+                        height="50">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="habilidades">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+
+            <div class="habilidade-grid">
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                        alt="Angular">
+                    <p>Angular</p>
+                </div>
+                <div class="icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                        alt="Jenkins">
+                    <p>Jenkins</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                        alt="WordPress">
+                    <p>WordPress</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.iconscout.com/icon/free/png-256/postman-3521648-2945092.png" alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="icon-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+                        alt="GitLab">
+                    <p>GitLab</p>
+                </div>
+                <div class="icon-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        alt="VSCode">
+                    <p>VSCode</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="servicos-grid">
+                <!-- Serviço 01 -->
+                <div class="servico-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Websites">
+                    <h3>01. Websites</h3>
+                    <p>Produção de websites dinâmicos e institucionais responsivos, aplicações em React e Angular.</p>
+                </div>
+
+                <!-- Serviço 02 -->
+                <div class="servico-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                        alt="WordPress">
+                    <h3>02. WordPress</h3>
+                    <p>Desenvolvimento de temas, customização de templates, correções e atualizações no seu site.</p>
+                </div>
+
+                <!-- Serviço 03 -->
+                <div class="servico-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2749/2749018.png" alt="Landing Page">
+                    <h3>03. Landing Pages</h3>
+                    <p>Produção de LPS customizadas para converter visitantes em leads, e leads em clientes.</p>
+                </div>
+
+                <!-- Serviço 04 -->
+                <div class="servico-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="E-commerce">
+                    <h3>04. E-commerce</h3>
+                    <p>Lojas virtuais personalizadas com Loja Integrada, Tray ou WooCommerce do WordPress.</p>
+                </div>
+
+                <!-- Serviço 05 -->
+                <div class="servico-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/591/591576.png" alt="Performance">
+                    <h3>05. Carregamento Rápido</h3>
+                    <p>Otimização de performance para melhor experiência do usuário e melhores resultados no Google.</p>
+                </div>
+
+                <!-- Serviço 06 -->
+                <div class="servico-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2040/2040504.png" alt="Sistema Integrado">
+                    <h3>05. Sistema Integrado</h3>
+                    <p>Envolve o desenvolvimento multiplataformas, onde dispositivos diferentes se comunicam e trabalham
+                        em sincronia artavés da intert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <button onclick="baixarPDF()" class="cta">Download do Curriculo</button>
+            <script>
+                function baixarPDF() {
+                    const link = document.createElement('a');
+                    window.open("images/Currículo_Thiago_Costa.pdf", "_blank");
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script>
+
+        </div>
+    </header>
+
+    <!-- Projetos em Destaque -->
+    <section class="projetos">
+        <div class="container">
+            <h2>Projetos em Destaque</h2>
+            <div class="projetos-grid">
+                <!-- Projeto 01 -->
+                <div class="projeto-item">
+                    <img src="images/projeto1.jpg" alt="Projeto 1">
+                    <h3>Sistema de Controle de Estoque</h3>
+                    <p>Aplicação web completa desenvolvida com Java + Angular. CRUD, autenticação e painel
+                        administrativo.</p>
+                    <a href="https://github.com/thiagocosta031083/sistema-estoque" target="_blank"
+                        class="btn-projeto">Ver no GitHub</a>
+                </div>
+
+                <!-- Projeto 02 -->
+                <div class="projeto-item">
+                    <img src="images/projeto2.jpg" alt="Projeto 2">
+                    <h3>Sistema de Orçamento Contábil</h3>
+                    <p>Automação de propostas de prestação de serviços contábeis com Java e integração MySQL.</p>
+                    <a href="https://github.com/thiagocosta031083/orcamento-contabil" target="_blank"
+                        class="btn-projeto">Ver no GitHub</a>
+                </div>
+
+                <!-- Projeto 03 -->
+                <div class="projeto-item">
+                    <img src="images/projeto3.jpg" alt="Projeto 3">
+                    <h3>Portfólio Responsivo</h3>
+                    <p>Este site! Criado com HTML, CSS, JavaScript e responsividade total para mobile.</p>
+                    <a href="https://github.com/thiagocosta031083/portifolio" target="_blank" class="btn-projeto">Ver no
+                        GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contato -->
+    <section class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Fique à vontade para me chamar pelos canais abaixo:</p>
+
+
+            <div class="icones-contato">
+                <!-- E-mail -->
+                <a href="mailto:thiagocosta031083@gmail.com" aria-label="E-mail">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" width="40" height="40">
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/thiago-de-almeida-costa/" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn" width="40" height="40" />
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/thiagocosta031083" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" width="40" height="40" />
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5561996581656" target="_blank" aria-label="Fale conosco no WhatsApp">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="40"
+                        height="40">
+                </a>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Thiago de Almeida Costa. Todos os direitos reservados.</p>
+            <a href="#">Política de Privacidade</a> |
+            <a href="#">Termos de Uso</a>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5561996581656" class=" whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50" height="50">
+    </a>
+
+</body>
+
+</html>
