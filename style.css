@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #000d1b, #02436b);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    display: inline-block;
+    background: #00c897;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero .cta:hover {
+    background: #009b72;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sobre */
+.sobre {
+    background: linear-gradient(to right, #cfcece, #eeeaea);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* para responsividade */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.picture img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.picture .sobre-mim {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.picture .sobre-mim h2 {
+    font-size: 1.8rem;
+    color: #02436b;
+    margin-bottom: 10px;
+}
+
+.picture .sobre-mim p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.icones-contato {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icones-contato a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    filter: brightness(100%);
+
+}
+
+.icones-contato a:hover img {
+    transform: scale(1.1);
+    filter: brightness(130%);
+}
+
+
+.habilidades {
+    background: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.habilidades h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #02436b;
+}
+
+.habilidades h3 {
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.habilidade-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.icon-item p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.icon-item:hover img {
+    transform: scale(1.2);
+}
+
+
+.servicos {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #02436b;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.servico-item {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.servico-item:hover {
+    transform: translateY(-5px);
+}
+
+.servico-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.servico-item h3 {
+    font-size: 1.2rem;
+    color: #02436b;
+    margin-bottom: 10px;
+}
+
+.servico-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.projetos {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #02436b;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.projeto-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: left;
+}
+
+.projeto-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.projeto-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #02436b;
+}
+
+.projeto-item p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.btn-projeto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00c897;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-projeto:hover {
+    background-color: #009b72;
+}
+
+.contato {
+    background: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    color: #02436b;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contato-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contato-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.contato-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.contato-item a {
+    color: #02436b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+.contato-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Rodapé */
+.rodape {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape a {
+    color: #00c897;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .sobre .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
